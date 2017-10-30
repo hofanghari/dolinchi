@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from selenium import webdriver
-import org.openqa.selenium.support.ui.Select as Select
+
 import time
 
 
@@ -19,10 +19,9 @@ class Chilindo(object):
         self.driver.find_element_by_id('ContentPlaceHolder1_txtBidNew').clear()
         self.driver.find_element_by_id(
             'ContentPlaceHolder1_txtBidNew').send_keys(price)
-        select = Select(self.driver.find_element_by_id(
-            'ContentPlaceHolder1_ddlRelatedItems'))
-        select.selectByVisibleText(sel)
-        select.selectByIndex(sel)
+        self.driver.find_element_by_id(
+            'ContentPlaceHolder1_ddlRelatedItems').click()
+
         time.sleep(2)
         self.driver.find_element_by_id('ContentPlaceHolder1_btnBid').click()
 
