@@ -57,7 +57,7 @@ def main():
     # print(profile)
     # set something on the profile...
     # driver = webdriver.Firefox(firefox_profile=fp)
-    chi = Chilindo('hoanghaikgs', '256487')
+    chi = Chilindo('hoanghaikgs', 'xxx')
     time.sleep(1)
     chi.beat('42-036', 200, 1)
     # url = 'http://www.chilindo.com/vn/product/41-030'
